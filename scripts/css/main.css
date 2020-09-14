@@ -3,7 +3,7 @@
     --color-two: #99C794;
     --color-three: #F9AD57;
 }
-
+/*ALLGEMEINER HTML BEREICH*/
 html, body {
     font-family: Indie Flower,monospace;
     height: 100%;
@@ -13,6 +13,7 @@ body {
   flex-wrap: wrap;
   margin: 0;
 }
+/* HEADER BEREICH*/
 .header-menu, footer {
   display: flex;
   align-items: center;
@@ -27,6 +28,13 @@ body {
 h2 {
   margin: 0 0 8px;
 }
+
+/*NAVIGATIONS-BAR (SUCHE + SIGN IN/ OUT USW.)*/
+.nav-bar{
+  padding-bottom: 88px;
+  width: 100%;
+}
+
 button{
   background-color: #4CAF50; /* Green */
   -webkit-text-stroke: 0.8px rgb(73, 73, 73);
@@ -41,10 +49,27 @@ button{
 }
 ul li {
   display: inline-block;
-  padding: 0px 80px 0px 0px;
   list-style: none;
   font-size: 1.5em;
 }
+li{
+  margin-left: 560px;
+}
+.signup-btn{
+margin-right: -550px;
+}
+
+.swiddle-title{
+margin-right: 60px;
+margin-left: 1px;
+}
+.swiddle-img{
+  margin-top: 100px;
+  height:50px;
+  width:150px;
+  
+}
+/*TO DO */
 aside {
   flex: 0.4;
   height: 165px;

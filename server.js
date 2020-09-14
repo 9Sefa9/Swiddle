@@ -10,7 +10,7 @@
 
 //um auf CSS und Javascript zuzugreifen.
 app.use(express.static("scripts"));
-
+app.use('/images', express.static(__dirname + '/images'));
 //zeigt den homepage
 app.get('/',function(req,res){
     res.sendFile(__dirname + '/index.html');
