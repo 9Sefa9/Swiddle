@@ -1,12 +1,32 @@
 :root{
     --color-one: #60BDAA;
-    --color-two: #99C794;
+    --color-two: #96e28e;
     --color-three: #F9AD57;
 }
 /*ALLGEMEINER HTML BEREICH*/
+html{
+  background-size: 400% 400%;
+	
+  background-image: repeating-linear-gradient(
+    -8deg,
+    #60bdaa00,#96e28e00 0%,
+    #60bdaa4b,#96e28e41 30%,
+    #60bdaa88,#96e28e85 50%,
+    #60bdaa,#96e28e 100% 
+);
+animation: transparencyToColor 11s ease infinite;
+}
+
+@keyframes transparencyToColor {
+  0% {background-position: 0% 50%}
+  100% {background-position: 100% 50%}
+}
+
 html, body {
+  /*  background-image: linear-gradient(var(--color-one), var(--color-two));*/
     font-family: Indie Flower,monospace;
     height: 100%;
+
 }
 body {
   display: flex;
@@ -22,7 +42,6 @@ body {
 .header-menu {
   justify-content: flex-end;
   height: 60px;
-  background: var(--color-one);
   color: #fff;
 }
 h2 {
@@ -30,11 +49,6 @@ h2 {
 }
 
 /*NAVIGATIONS-BAR (SUCHE + SIGN IN/ OUT USW.)*/
-.nav-bar{
-  padding-bottom: 88px;
-  width: 100%;
-}
-
 button{
   background-color: #4CAF50; /* Green */
   -webkit-text-stroke: 0.8px rgb(73, 73, 73);
@@ -47,28 +61,71 @@ button{
   font-family : inherit;
   font-size: 1.5em;
 }
-ul li {
-  display: inline-block;
-  list-style: none;
-  font-size: 1.5em;
+.nav-bar{
+  /*padding-bottom: 85px;*/
+  width: 100%;
+  padding: 10px;
 }
-li{
-  margin-left: 560px;
-}
-.signup-btn{
-margin-right: -550px;
+.ul-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content:space-around; 
+  margin-top: 50px;
 }
 
-.swiddle-title{
-margin-right: 60px;
-margin-left: 1px;
+ul li {
+  /*display: inline-block; */
+  list-style: none;
 }
-.swiddle-img{
-  margin-top: 100px;
-  height:50px;
-  width:150px;
+li{
+  font-size: 1.5em;
+}
+input[type=search]{
+  list-style: none;
+  padding: 8px 8px 8px 6px;
+  border-style: black;
+
+}
+input[type=submit]{
+  padding: 8px;
+  border-style: black;
+  width: 100px;
+  height: 10%;
   
 }
+.swiddle-title{
+order:1;
+padding-top: 10px;
+}
+.swiddle-title-img{
+  height: 60px;
+  width: 17 0px;
+}
+.input-search{
+order:2;
+padding:0;
+margin:0;
+flex-grow: 0.8;
+
+}
+.check-profile{
+  order:3;
+}
+.signup-btn{
+order: 4;
+flex-shrink: 5;
+}
+.signin-btn{
+  order: 5;
+  flex-shrink: 5;
+}
+
+
+
+
+
 /*TO DO */
 aside {
   flex: 0.4;
@@ -82,5 +139,5 @@ section {
 }
 footer {
   padding: 0 10px;
-  background: #ccc;
+  background: none;
 }

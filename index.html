@@ -12,12 +12,20 @@
     <header class="header-menu">
         <!-- The <nav> element defines a block of navigation links, either within the current document or to other documents. -->
       <nav class="nav-bar">
-        <ul>
-          <li class="swiddle-title"><img class="swiddle-img" src="/images/swiddle.png" alt="Swiddle-Icon"></li>
-          <li class="input-search"><input type="search">Search</li>
+        <ul class="ul-container">
+          <!--<img src="/images/swiddle.png" alt="Swiddle-Icon" height="50px" width="150px">-->
+          <li class="swiddle-title"><img class="swiddle-title-img" src="/images/swiddle.png" alt="Swiddle-Icon" ></li>
+          <li class="input-search">
+            <form for="input-search" action="" method="post" target="_blank">
+            
+                <input type="search" name="searchVideo" placeholder="Search for funny videos :P">
+                <input type="submit" value="search" >  
+             
+            </form>
+          </li>
+          <li class="check-profile"><button type="submit">Profile</button></li>
           <li class="signup-btn"><button type="submit">Sign up</button></li>
-          <li class="signup-btn"><button type="submit">Sign in</button></li>
-      
+          <li class="signin-btn"><button type="submit">Sign in</button></li>
         </ul>
       </nav>
     </header>
