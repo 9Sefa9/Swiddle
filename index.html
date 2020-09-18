@@ -32,21 +32,17 @@
 
 
     <section class="section-container">
+      
       <div class="left-div">
         <p>left</p>
       </div>
       <div class="mid-div">
-        <script> 
-        var vid = document.getElementById("mid-vid");
-
-function setvolume(){
-	vid.volume = volumeslider.value / 100;
-}
-         </script>
-        <video id="mid-vid" onclick="setvolume();" muted controls autoplay>
+       
+        <video id="mid-vid" width="640" height="450" controls muted autoplay loop  codeload="auto">
           <source src="/videos/rr.mp4" type="video/mp4">
           Your browser does not support HTML video.
         </video>
+    
       </div>
       <div class="right-div">
         <p>right</p>
@@ -59,6 +55,7 @@ function setvolume(){
     <footer>
       <small>Company © Swiddle. All rights reserved.</small>
     </footer>
+   
   </body>
 </html>
 

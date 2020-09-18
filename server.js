@@ -19,4 +19,4 @@ app.get('/favico.ico', (req, res) => {
 app.get('/',function(req,res){
     res.sendFile(__dirname + '/index.html');
 });
-app.listen(8080, () => console.log('Server started on port 8080'));
+app.listen(3121, () => console.log('Server started on port 3121'));
