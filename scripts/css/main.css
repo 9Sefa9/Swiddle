@@ -33,6 +33,7 @@ body {
   flex-wrap: wrap;
   margin: 0;
 }
+
 /* HEADER BEREICH*/
 .header-menu, footer {
   display: flex;
@@ -62,7 +63,6 @@ button{
   font-size: 1.5em;
 }
 .nav-bar{
-  /*padding-bottom: 85px;*/
   width: 100%;
   padding: 10px;
 }
@@ -76,7 +76,6 @@ button{
 }
 
 ul li {
-  /*display: inline-block; */
   list-style: none;
 }
 li{
@@ -126,16 +125,35 @@ flex-shrink: 5;
 
 
 
-/*TO DO */
+/*SEITENBEREICH + SECTIONS und FOOTER!*/
 aside {
   flex: 0.4;
   height: 165px;
   padding-left: 15px;
   border-left: 1px solid #666;
 }
-section {
-  flex: 1;
-  padding-right: 15px;
+.section-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content:space-evenly; 
+}
+.left-div{
+  
+order:1;
+}
+.mid-div{
+  
+order:2;
+}
+.mid-vid{
+  width:400;
+}
+.right-div{
+  
+order:3;
 }
 footer {
   padding: 0 10px;
