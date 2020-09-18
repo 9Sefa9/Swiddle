@@ -10,16 +10,23 @@ html{
   background-image: repeating-linear-gradient(
     -8deg,
     #60bdaa00,#96e28e00 0%,
-    #60bdaa4b,#96e28e41 30%,
-    #60bdaa88,#96e28e85 50%,
+    #96e28e57,#96e28e41 30%,
+    #60bdaa88,#96e288  50%,
     #60bdaa,#96e28e 100% 
 );
-animation: transparencyToColor 11s ease infinite;
+animation: transparencyToColor 15s ease infinite;
 }
 
 @keyframes transparencyToColor {
-  0% {background-position: 0% 50%}
-  100% {background-position: 100% 50%}
+  0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 html, body {
@@ -126,12 +133,7 @@ flex-shrink: 5;
 
 
 /*SEITENBEREICH + SECTIONS und FOOTER!*/
-aside {
-  flex: 0.4;
-  height: 165px;
-  padding-left: 15px;
-  border-left: 1px solid #666;
-}
+
 .section-container{
   width: 100%;
   display: flex;
@@ -139,20 +141,55 @@ aside {
   flex-wrap: nowrap;
   align-items: center;
   justify-content:space-evenly; 
+
+ border-style: solid;
+ border-color: rgb(255, 0, 149);
+ background-image: repeating-linear-gradient(
+    8deg,
+    #60bd9900,#96e28e00 0%,
+    #a360bd4b,#dce28e41 30%,
+    #51c5ae88,#96e28e85 50%,
+    rgb(74, 183, 216),#78fc69 100% 
+);
+animation: transparencyToColor 11s ease infinite;
 }
 .left-div{
   
 order:1;
 }
+.like-btn{
+order:1;
+border-radius: 100%;
+
+background-color: rgb(8, 212, 1);
+}
+.like-img{
+width:50%;
+height:50%;
+}
 .mid-div{
 order:2;
-}
-.mid-vid{
+
 
 }
+.mid-vid{
+  order:2;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 .right-div{
-  
+  order:3;
+
+}
+.unlike-btn{
 order:3;
+border-radius: 100%;
+
+background-color: rgb(212, 1, 1);
+}
+.unlike-img{
+  width:50%;
+  height:50%;
 }
 footer {
   padding: 0 10px;
